@@ -25,7 +25,13 @@ public abstract class Bloque extends Actor{
         tickTime += deltaTime; 
         if (tickTime > TICK) {            
             tickTime -= TICK;
-            this.mover();
+            ///////////////////////////////////////////////////////////////////////////////////////
+            //revisar
+            if (this.getGame().isPausa()) {
+                this.getGame().actorManager.del(this);
+            }
+             this.mover();
+            
             this.golpear();
         }
         

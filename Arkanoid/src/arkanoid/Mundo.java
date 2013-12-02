@@ -105,7 +105,7 @@ public class Mundo extends Game{
                                   {LADRILLO_SUERTE,     LADRILLO_AZUL, LADRILLO_AZUL,  LADRILLO_AZUL, LADRILLO_AMARILLO, LADRILLO_AMARILLO,  LADRILLO_AMARILLO, LADRILLO_AZUL, LADRILLO_AZUL,  LADRILLO_AZUL, LADRILLO_SUERTE}};
         
         this.generarParedLadrillosAMedida(matrizLadrillos, 10, 20);
-        //this.generarParedLadrillosHomogenea(LADRILLO_ROJO, 3, 10, 10, 10);
+        //this.generarParedLadrillosHomogenea(LADRILLO_SUERTE, 3, 10, 10, 10);
         
         //Titulo vidas y puntos
         tituloPuntosVidas = new ActorTexto(this,"Puntos " + barra.getPuntos());
